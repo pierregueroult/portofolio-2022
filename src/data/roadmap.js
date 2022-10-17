@@ -8,7 +8,7 @@ const roadmapItems = [
   {
     date: null,
     title: "Stage Cerp Rouen",
-    text: "Malgré mon jeune âge lors de ce stage, cela m'a permis de découvrir l'informatique et général et de parler avec de dévellopement web avec de vrais développeurs, ce qui m'a conquis.",
+    text: "Malgré mon jeune âge lors de ce stage, cela m'a permis de découvrir l'informatique en général et de parler avec de dévellopement web avec de vrais développeurs, ce qui m'a conquis.",
     image:
       "https://www.legal-suite.fr/medias/org-1087/shared/logo-cerp-rouen.png",
   },
