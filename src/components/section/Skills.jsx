@@ -65,7 +65,7 @@ export default function Skills() {
         <article className="skills__article">
           <SkillsSection
             title="Etudes"
-            image="/images/background.jpg"
+            image="/images/iut_frederic_bisson.jpg"
             icon={<i className="fa-solid fa-graduation-cap"></i>}
             list={["Diplômes :", "Baccalauréat", "BUT MMI à venir"]}
           >
@@ -76,7 +76,7 @@ export default function Skills() {
           </SkillsSection>
           <SkillsSection
             title="Langages"
-            image="/images/background.jpg"
+            image="/images/code.jpg"
             icon={<i className="fa-solid fa-code"></i>}
             list={[
               "Langages :",
@@ -94,7 +94,7 @@ export default function Skills() {
           </SkillsSection>
           <SkillsSection
             title="Logiciel"
-            image="/images/background.jpg"
+            image="/images/ezra.gif"
             icon={<i className="fa-solid fa-hashtag"></i>}
             list={[
               "Logiciels :",

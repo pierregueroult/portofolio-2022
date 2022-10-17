@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import links from "../../data/links";
 import InnerLink from "../atoms/InnerLink";
 import { OuterLinkBlank } from "../atoms/OuterLink";
@@ -107,10 +108,14 @@ export default function Contact() {
       </div>
       <div className="contact__links">
         <p className="contact__links__text">
-          <a href="/">Politique de confidentialité</a>
+          <a href="/documents/privacy_policy.pdf" target={"_blank"}>
+            Politique de confidentialité
+          </a>
         </p>
         <p className="contact__links__text">
-          <a href="/">Condition d'utilisation</a>
+          <a href="/documents/terms_of_use.pdf" target={"_blank"}>
+            Condition d'utilisation
+          </a>
         </p>
         <div className="contact__links__top">
           <InnerLink destination={"landing"}>Retouner en haut</InnerLink>

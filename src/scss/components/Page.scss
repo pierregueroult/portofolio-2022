@@ -7,6 +7,11 @@
     position: absolute;
     scroll-behavior: smooth;
 
+    @media screen and (max-width: 750px) {
+      height: 100vh !important;
+      top: 0px !important;
+    }
+
     /* ===== Scrollbar CSS ===== */
     /* Firefox */
     scrollbar-width: auto;
