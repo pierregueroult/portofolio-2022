@@ -1,0 +1,20 @@
+$duration: 500ms;
+$size: 200px;
+
+.found,
+.notfound {
+  transition: transform $duration ease-in-out, opacity $duration ease-in-out;
+  transform: translateX(0px);
+}
+
+.current {
+  opacity: 1 !important;
+}
+
+.next {
+  transform: translateX($size);
+}
+
+.before {
+  transform: translateX(-$size);
+}

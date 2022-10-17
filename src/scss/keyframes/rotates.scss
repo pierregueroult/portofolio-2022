@@ -1,0 +1,17 @@
+@keyframes starAnims {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(400px);
+  }
+}
+
+@keyframes portalRotate {
+  from {
+    transform: rotate3d(1, 0, 0, 70deg) rotateZ(0deg);
+  }
+  to {
+    transform: rotate3d(1, 0, 0, 70deg) rotateZ(360deg);
+  }
+}

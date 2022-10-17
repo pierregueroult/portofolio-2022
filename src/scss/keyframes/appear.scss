@@ -1,0 +1,26 @@
+@keyframes leftWMargin {
+  from {
+    margin-right: 60px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    margin-right: 0px;
+    opacity: 1;
+  }
+}
+@keyframes rightWMargin {
+  from {
+    margin-left: 60px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    margin-left: 0px;
+    opacity: 1;
+  }
+}

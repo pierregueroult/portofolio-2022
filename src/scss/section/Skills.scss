@@ -1,0 +1,93 @@
+.skills {
+  margin-bottom: 8rem;
+  &__container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8rem 0rem;
+  }
+  &__article {
+    width: 70vw;
+    display: flex;
+    gap: 2%;
+
+    @media screen and (max-width: 1300px) {
+      width: 95vw;
+    }
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+    }
+  }
+  &__part {
+    width: calc(96% / 3);
+    display: flex;
+    flex-direction: column;
+    border: var(--shadowColor) 2px solid;
+    img {
+      width: 100%;
+    }
+    @media screen and (max-width: 800px) {
+      width: 80vw;
+    }
+    @media screen and (max-width: 350px) {
+      width: 95vw;
+    }
+    &__container {
+      flex-grow: 1;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      i {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        top: 0;
+        font-size: 3rem;
+      }
+      h1 {
+        font-family: "ClashDisplay Regular", sans-serif;
+        margin-top: 2rem;
+        font-size: 2rem;
+      }
+      p {
+        font-family: "Oswald", sans-serif;
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+        padding: 1rem 1.4rem 0rem 1.4rem;
+      }
+      ul {
+        list-style: none;
+        font-family: "ClashDisplay Medium", sans-serif;
+        margin-bottom: 1.5rem;
+
+        li {
+          font-size: 1.4rem;
+          margin: 0.5rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+  &__marquee {
+    color: var(--textColor);
+    font-family: "ClashDisplay Regular", sans-serif;
+    font-size: 3rem;
+    line-height: 1.2;
+    overflow-y: hidden;
+    height: 60px;
+    word-spacing: -0.3rem;
+    position: relative;
+
+    &__text {
+      padding: 0 1rem;
+      user-select: none;
+      text-transform: capitalize;
+    }
+  }
+}

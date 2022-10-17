@@ -1,0 +1,74 @@
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  background-color: black;
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  $neon-color: #307cf2;
+
+  &.is-out {
+    opacity: 0;
+    animation: z-index-step 0ms 500ms steps(2) forwards;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__image {
+    height: 20rem;
+    animation: loading-image 500ms 2000ms ease-in-out forwards;
+  }
+
+  &__bar-container {
+    display: flex;
+    flex-direction: row;
+    width: 24rem;
+    align-items: center;
+
+    p {
+      color: var(--textColor);
+      margin-left: 1.2rem;
+      font-size: 1.3rem;
+      font-family: "ClashDisplay Regular";
+      width: 2rem;
+    }
+  }
+
+  &__loading-bar {
+    background-color: var(--shadowColor);
+    height: 5px;
+    border-radius: 5px;
+    position: relative;
+    flex: 1;
+    // transition: opacity 500ms ease-in-out;
+
+    // &.is-out {
+    //   opacity: 0;
+    // }
+
+    div {
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: var(--textColor);
+      border-radius: 5px;
+      animation: loading-progress 2000ms ease-in-out forwards;
+      // box-shadow: 0 0 7px #fff, 0 0 21px #fff, 0 0 42px $neon-color,
+      //   0 0 82px $neon-color, 0 0 92px $neon-color, 0 0 102px $neon-color,
+      //   0 0 151px $neon-color;
+    }
+  }
+}

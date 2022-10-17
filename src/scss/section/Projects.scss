@@ -1,0 +1,449 @@
+.projects {
+  position: relative;
+
+  &__carousel {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    transition: transform 10ms 0ms ease-in-out;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__important {
+    height: 729px;
+    width: 95vw;
+    margin: 0 auto 3rem auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 350px) {
+      width: 100vw;
+    }
+
+    &__container {
+      width: 80%;
+      height: 80%;
+      position: relative;
+      list-style: none;
+
+      li {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        border: 1px var(--shadowColor) solid;
+        z-index: 3;
+        opacity: 0;
+        text-align: center;
+
+        &.bright {
+          color: var(--textColor);
+        }
+        &.dark {
+          color: var(--backgroundColor);
+        }
+
+        &.found {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 6;
+          }
+
+          a {
+            text-decoration: none;
+
+            &.dark {
+              color: var(--backgroundColor);
+            }
+            &.bright {
+              color: var(--textColor);
+            }
+            p {
+              font-size: 2.5rem;
+              font-family: "ClashDisplay Regular";
+            }
+          }
+
+          p {
+            position: relative;
+            z-index: 7;
+
+            font-size: 1.5rem;
+            font-family: "Oswald";
+          }
+        }
+        &.notfound {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          h3 {
+            font-family: "ClashDisplay Regular";
+            letter-spacing: 0.2rem;
+            font-size: 2rem;
+          }
+          p {
+            font-family: "Oswald";
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+
+    &__button {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 5;
+
+      i {
+        font-size: 3.3rem;
+        cursor: pointer;
+      }
+
+      &-left {
+        left: 1rem;
+
+        @media screen and (max-width: 550px) {
+          left: 0rem;
+        }
+      }
+
+      &-right {
+        right: 1rem;
+        @media screen and (max-width: 550px) {
+          right: 0rem;
+        }
+      }
+    }
+
+    &__counter {
+      position: absolute;
+      left: 2rem;
+      bottom: 2rem;
+      border: 3px solid var(--textColor);
+      height: 130px;
+      width: 130px;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--backgroundColor);
+      z-index: 11;
+
+      @media screen and (max-width: 500px) {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0rem;
+      }
+
+      &__item {
+        &_1 {
+          left: 5px;
+        }
+      }
+
+      span {
+        width: 100px;
+        font-size: 2.8rem;
+        font-family: "ClashDisplay Regular";
+        text-align: center;
+      }
+
+      .numbers {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        // height: 100px;
+        > span {
+          width: 50%;
+          text-align: right;
+        }
+        div {
+          display: flex;
+          flex-direction: column;
+          width: 50%;
+          position: relative;
+          > span {
+            position: absolute;
+            text-align: left;
+            opacity: 0;
+            transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+
+            &.number-current {
+              opacity: 1;
+              transform: translateY(0px);
+            }
+            &.number-before {
+              transform: translateY(-20px);
+            }
+            &.number-after {
+              transform: translateY(20px);
+            }
+          }
+        }
+      }
+      > span:nth-child(1) {
+        font-size: 1.4rem;
+      }
+      > span:nth-child(3) {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  &__skip {
+    position: sticky;
+    left: 0;
+    width: 100%;
+    top: 85%;
+    z-index: 50;
+
+    a {
+      color: var(--textColor);
+      text-decoration: none;
+    }
+
+    display: flex;
+    gap: 4rem;
+    font-family: "ClashDisplay Regular";
+    font-size: 1.4rem;
+    justify-content: center;
+
+    p {
+      text-align: center;
+      border: 0.15rem solid var(--shadowColor);
+      transition: border-color 200ms ease-in-out;
+      padding: 1rem 3rem;
+
+      &:hover {
+        border: 0.15rem solid var(--textColor);
+      }
+    }
+  }
+
+  &__title {
+    position: sticky;
+    left: 0;
+    // transform: translateX(-50%);
+    width: 100%;
+    top: 0;
+    color: var(--textColor);
+    font-family: "ClashDisplay Regular";
+    z-index: 51;
+    text-align: center;
+    height: 8rem;
+    line-height: 8rem;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+}
+
+.project {
+  $height: 30rem;
+  height: $height;
+  width: $height * 1.61;
+  flex-grow: 1;
+  flex-shrink: 0;
+  border: 0.15rem solid var(--shadowColor);
+  transition: border-color 200ms ease-in-out;
+  position: relative;
+  flex-shrink: 0;
+  list-style: none;
+  top: 4rem;
+  opacity: 0;
+  animation: projectAppear 300ms 0ms ease-in-out forwards;
+
+  @keyframes projectAppear {
+    from {
+      opacity: 0;
+      top: 4rem;
+    }
+    to {
+      opacity: 1;
+      top: 0rem;
+    }
+  }
+  &:hover {
+    border: 0.15rem solid var(--textColor);
+  }
+  &:first-of-type {
+    margin-left: 5rem;
+  }
+
+  &__seemore {
+    border: 0.15rem solid var(--shadowColor);
+    width: 15rem;
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin: 2rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 200ms ease-in-out;
+
+    &:hover {
+      border: 0.15rem solid var(--textColor);
+    }
+    p {
+      font-size: 1.8rem;
+      font-family: "ClashDisplay Regular";
+    }
+  }
+
+  &__head-bar {
+    width: 100%;
+    display: flex;
+    height: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    &__image {
+      border-radius: 50%;
+      margin: 1rem;
+      height: 100%;
+    }
+
+    &__text {
+      font-family: "ClashDisplay Regular";
+      padding-top: 1rem;
+      text-overflow: ellipsis;
+      flex: 1;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+        color: var(--textColor);
+      }
+
+      span:not(:first-of-type) {
+        margin-left: 1rem;
+      }
+
+      span:nth-child(1) {
+        text-transform: capitalize;
+        font-size: 2rem;
+      }
+      span:nth-child(2) {
+        font-size: 1rem;
+      }
+      span:nth-child(3) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  &__topics {
+    position: absolute;
+    left: 0;
+    bottom: 1rem;
+    width: 200px;
+    display: flex;
+    list-style: none;
+    font-family: "ClashDisplay Regular";
+    gap: 1rem;
+    width: 100%;
+
+    a {
+      color: var(--textColor);
+    }
+  }
+
+  &__topic {
+    font-size: 1.2rem;
+    &:first-of-type {
+      margin-left: 1rem;
+    }
+    &:last-of-type {
+      margin-right: 1rem;
+    }
+  }
+
+  &__exit {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    > a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--textColor);
+      text-decoration: none;
+      i {
+        font-size: 3rem;
+      }
+    }
+  }
+  &__dates {
+    position: absolute;
+    font-size: 1.5rem;
+    font-family: "ClashDisplay Regular";
+    right: -3rem;
+    height: 30px;
+    width: 200px;
+    bottom: 4rem;
+    transform: rotateZ(-90deg) translateX(50%);
+    transform-origin: top center;
+    display: flex;
+    align-items: center;
+  }
+
+  &__languages {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 30%;
+    left: 1rem;
+    gap: 0.4rem;
+    a {
+      color: white;
+      text-decoration: none;
+      $size: 30px;
+      i {
+        font-size: $size;
+        &[language="SCSS"] {
+          font-size: 25px !important;
+        }
+      }
+
+      img {
+        filter: invert(100);
+        width: $size;
+      }
+    }
+  }
+}

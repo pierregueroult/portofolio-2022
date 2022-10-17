@@ -1,0 +1,28 @@
+@keyframes loading-progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+$neon-color: #307cf2;
+
+@keyframes loading-image {
+  from {
+    filter: none;
+  }
+  to {
+    filter: drop-shadow(0 0 7px #fff) drop-shadow(0 0 42px $neon-color);
+  }
+}
+
+@keyframes z-index-step {
+  from {
+    z-index: 1000;
+  }
+  to {
+    z-index: -10;
+  }
+}
