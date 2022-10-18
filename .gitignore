@@ -24,3 +24,7 @@ todo.txt
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# documents temp
+/public/documents/privacy_policy.docx
+/public/documents/terms_of_use.docx
