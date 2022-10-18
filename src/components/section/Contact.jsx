@@ -144,8 +144,8 @@ export default function Contact() {
       <div className="contact__right-social-container">
         <div className="contact__right-social-container__email__container">
           <p className="contact__right-social-container__email">
-            <a href="mailto:pierre.gueroult@univ-rouen.fr">
-              pierre.gueroult@univ-rouen.fr
+            <a href="mailto:contact@pierregueroult.dev">
+              contact@pierregueroult.dev
             </a>
           </p>
         </div>
