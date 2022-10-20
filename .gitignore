@@ -28,3 +28,6 @@ yarn-error.log*
 # documents temp
 /public/documents/privacy_policy.docx
 /public/documents/terms_of_use.docx
+
+#non compressed images 
+/public/images/old

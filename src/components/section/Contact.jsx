@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import links from "../../data/links";
 import InnerLink from "../atoms/InnerLink";
 import { OuterLinkBlank } from "../atoms/OuterLink";

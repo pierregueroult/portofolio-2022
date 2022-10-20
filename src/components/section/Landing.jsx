@@ -25,7 +25,7 @@ export default function Landing() {
       </div>
       <img
         alt="morai"
-        src="/images/Convor.png"
+        src="/images/Convor.webp"
         className="landing__image"
         ref={parallax1.ref}
       />
