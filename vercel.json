@@ -2,5 +2,15 @@
   "buildCommand": "npm run build",
   "devCommand": "npm run start",
   "installCommand": "npm install",
-  "headers": []
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
+      ]
+    }
+  ]
 }
