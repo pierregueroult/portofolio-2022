@@ -2,31 +2,5 @@
   "buildCommand": "npm run build",
   "devCommand": "npm run start",
   "installCommand": "npm install",
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Expires",
-          "value": "Thu, 5 Jan 2022 05:00:00 GMT"
-        },
-        {
-          "key": "Vary",
-          "value": "Accept-Encoding"
-        },
-        {
-          "key": "X-Frame-Options",
-          "value": "SAMEORIGIN"
-        },
-        {
-          "key": "Content-Language",
-          "value": "fr"
-        },
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        }
-      ]
-    }
-  ]
+  "headers": []
 }
