@@ -78,6 +78,7 @@ export default function Projects() {
                     src={project.owner.avatar_url}
                     alt="dev url"
                     className="project__head-bar__image"
+                    loading="lazy"
                   />
                   <p className="project__head-bar__text">
                     <span>

@@ -1,12 +1,4 @@
 function randomize(tab) {
-  var i, j, tmp;
-  for (i = tab.length; i > 0; i--) {
-    j = Math.floor(Math.random() * (i + 1));
-    tmp = tab[i];
-    tab[i] = tab[j];
-    tab[j] = tmp;
-  }
-  return tab;
+  return tab.sort(() => Math.random() - 0.5);
 }
-
 export default randomize;

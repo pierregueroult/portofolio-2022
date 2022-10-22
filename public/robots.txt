@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: /images/
+
+User-agent: *
+Disallow: /images/
+
+Sitemap: https://pierregueroult.dev/sitemap.xml

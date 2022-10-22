@@ -6,10 +6,10 @@ export default function Skills() {
   function SkillsSection({ title, image, icon, children, list }) {
     return (
       <div className="skills__part">
-        <img src={image} alt="skill banner" />
+        <img src={image} alt="skill banner" loading="lazy" />
         <div className="skills__part__container">
           {icon}
-          <h1>{title}</h1>
+          <h3>{title}</h3>
           <p>{children}</p>
           <ul>
             {list !== undefined && list !== null

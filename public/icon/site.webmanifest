@@ -1,19 +1,22 @@
 {
-    "name": "Pierre Gu\u00e9roult",
-    "short_name": "Pierre Gu\u00e9roult",
-    "icons": [
-        {
-            "src": "/android-chrome-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "/android-chrome-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
-    ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
-    "display": "standalone"
+  "name": "Pierre Gu\u00e9roult - Portofolio 2022",
+  "short_name": "Pierre Gu\u00e9roult",
+  "description": "Bienvenue sur le portfolio 2022 de Pierre Guéroult, étudiant et développeur web. Il résume ses projets de ces dernières années ainsi que tout un tas d'informations utiles.",
+  "theme_color": "#ffffff",
+  "background_color": "#0a0a0a",
+  "display": "standalone",
+  "dir": "ltr",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "/icon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }

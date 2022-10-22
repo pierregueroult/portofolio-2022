@@ -25,6 +25,7 @@ export default function Loader() {
     setTimeout(() => setIsMinTimeElapsed(true), minTimeLoad);
     document.fonts.ready.then(() => setIsFontLoaded(true));
     appPercents();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -32,6 +33,7 @@ export default function Loader() {
       dispatch({ loadingStep: 1 });
       setCurrentPercentage(100);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isMinTimeElapsed, isFontLoaded]);
 
   useEffect(() => {
@@ -41,6 +43,7 @@ export default function Loader() {
     if (state.loadingStep === 2) {
       setTimeout(() => dispatch({ loadingStep: 3 }), 200);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state.loadingStep]);
 
   return (

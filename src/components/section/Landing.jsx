@@ -20,8 +20,11 @@ export default function Landing() {
         }}
         ref={parallax2.ref}
       >
-        <h2 className="landing__title">PIERRE</h2>
-        <h2 className="landing__title">GUEROULT</h2>
+        <h1 className="landing__title">
+          PIERRE
+          <br />
+          GUEROULT
+        </h1>
       </div>
       <img
         alt="morai"

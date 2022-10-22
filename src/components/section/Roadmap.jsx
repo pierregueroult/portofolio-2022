@@ -25,8 +25,12 @@ export default function Roadmap() {
             {date !== null ? " - " : ""}
             {title}
           </h3>
-          {image !== null ? <img src={image} alt="background" /> : <Fragment />}
-          <p>{text}</p>
+          {image !== null ? (
+            <img src={image} alt="background" loading="lazy" />
+          ) : (
+            <Fragment />
+          )}
+          {text === "" ? <Fragment /> : <p>{text}</p>}
         </div>
       </article>
     );
