@@ -7,10 +7,6 @@
       "source": "/(.*)",
       "headers": [
         {
-          "key": "Content-Security-Policy",
-          "value": "default-src 'self'; img-src 'self' https://*; child-src 'none'; script-src 'self' https://www.googletagmanager.com https://microanalytics.io https://kit.fontawesome.com https://region1.google-analytics.com/"
-        },
-        {
           "key": "Expires",
           "value": "Thu, 5 Jan 2022 05:00:00 GMT"
         },
