@@ -13,6 +13,10 @@
         {
           "key": "Expires",
           "value": "Wed, 3 Oct 2024 07:00:00 GMT"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
         }
       ]
     }
