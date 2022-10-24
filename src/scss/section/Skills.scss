@@ -27,7 +27,8 @@
     display: flex;
     flex-direction: column;
     border: var(--shadowColor) 2px solid;
-    img {
+    img,
+    video {
       width: 100%;
     }
     @media screen and (max-width: 800px) {

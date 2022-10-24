@@ -1,12 +1,23 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Marquee from "react-fast-marquee";
 import marqueeText from "../../data/marquee-text";
 
 export default function Skills() {
-  function SkillsSection({ title, image, icon, children, list }) {
+  function SkillsSection({ title, image, video, icon, children, list }) {
     return (
       <div className="skills__part">
-        <img src={image} alt="skill banner" loading="lazy" />
+        {image === "" ? (
+          video !== "" ? (
+            <video loop="true" autoPlay="true">
+              <source src={video} type="video/mp4" />
+              Votre navigateur est invalide
+            </video>
+          ) : (
+            <Fragment />
+          )
+        ) : (
+          <img src={image} alt="skill banner" loading="lazy" />
+        )}
         <div className="skills__part__container">
           {icon}
           <h3>{title}</h3>
@@ -94,7 +105,8 @@ export default function Skills() {
           </SkillsSection>
           <SkillsSection
             title="Logiciel"
-            image="/images/ezra.gif"
+            image=""
+            video="/images/ezra.mp4"
             icon={<i className="fa-solid fa-hashtag"></i>}
             list={[
               "Logiciels :",
