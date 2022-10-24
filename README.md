@@ -1,7 +1,7 @@
 # Portofolio 2022
 
 > Made by Pierre Guéroult
-> pierre-gueroult.contact@laposte.net
+> pierre-gueroult.contact@laposte.net / contact@pierregueroult.dev
 
 ### `npm start`
 
@@ -17,4 +17,4 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-## Crée avec create-react-app
+## Created with create-react-app
