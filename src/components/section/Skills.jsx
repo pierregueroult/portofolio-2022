@@ -8,7 +8,7 @@ export default function Skills() {
       <div className="skills__part">
         {image === "" ? (
           video !== "" ? (
-            <video loop="true" autoPlay="true">
+            <video loop={true} autoPlay={true} muted={true}>
               <source src={video} type="video/mp4" />
               Votre navigateur est invalide
             </video>
