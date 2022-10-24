@@ -17,6 +17,10 @@
         {
           "key": "X-Frame-Options",
           "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Content-Language",
+          "value": "fr"
         }
       ]
     }

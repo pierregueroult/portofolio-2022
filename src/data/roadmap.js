@@ -46,7 +46,7 @@ const roadmapItems = [
     date: null,
     title: "IUT de Rouen",
     text: "Aujour'hui encore, je suis basé à Elbeuf, à l'IUT de Rouen dans l'objectif d'obtenir un BUT MMI au bout de mes trois ans d'études.",
-    image: "/images/iut_frederic_bisson.jpg",
+    image: "/images/iut_frederic_bisson.avif",
   },
 ];
 
